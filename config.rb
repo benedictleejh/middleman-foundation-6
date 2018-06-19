@@ -1,3 +1,4 @@
+require 'slim'
 ###
 # Compass
 ###
@@ -43,9 +44,12 @@ end
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
-# Reload the browser automatically whenever files change
 configure :development do
+  # Reload the browser automatically whenever files change
   activate :livereload
+
+  # Prettify HTML output from Slim
+  Slim::Engine.set_options :pretty => true
 end
 
 # Methods defined in the helpers block are available in templates
