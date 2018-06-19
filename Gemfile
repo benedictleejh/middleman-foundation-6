@@ -2,8 +2,8 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~>4.1.2"
-gem "middleman-sprockets", "~> 4.0.0.rc"
+gem "middleman", "~> 4.2"
+gem "middleman-sprockets", "~> 4.1"
 gem "middleman-compass"
 
 # Vendor prefixes for sass
