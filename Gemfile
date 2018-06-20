@@ -15,6 +15,11 @@ gem "middleman-livereload", "~> 3.4"
 # Use Slim for HTML templating
 gem 'slim', '~> 3.0'
 
+# Fixes an error with Middleman not correctly ignoring files, and causing errors with Tilt when TypeScript files are
+# present
+# See https://github.com/middleman/middleman/issues/2012
+gem 'typescript-node'
+
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
